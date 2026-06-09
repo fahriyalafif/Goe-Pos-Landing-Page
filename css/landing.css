@@ -1607,7 +1607,72 @@ details {
 }
 
 .spotlight-section {
+  padding-top: 110px;
+  overflow: hidden;
   background: #ffffff;
+}
+
+.post-hero-description {
+  padding: 82px 0 0;
+  background: #ffffff;
+}
+
+.post-hero-description .spotlight-description {
+  margin: 34px auto 0;
+}
+
+.section-transition-marker {
+  width: min(108px, 28vw);
+  height: 4px;
+  margin: 46px auto 0;
+  border-radius: 999px;
+  background: var(--primary);
+}
+
+.chrome-style-showcase {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+}
+
+.spotlight-heading {
+  width: min(980px, calc(100% - 40px));
+  margin: 0 auto 56px;
+  text-align: center;
+}
+
+.spotlight-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(30px, 4.3vw, 61px);
+  line-height: 1.06;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.spotlight-hero-image {
+  width: min(1056px, calc(100% - 48px));
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #f5f1ed;
+  box-shadow: 0 30px 80px rgba(54, 27, 22, 0.16);
+}
+
+.spotlight-hero-image img {
+  width: 100%;
+  aspect-ratio: 16 / 8.5;
+  object-fit: cover;
+  object-position: center;
+}
+
+.spotlight-description {
+  width: min(820px, calc(100% - 48px));
+  margin: 38px auto 0;
+  color: var(--muted);
+  text-align: center;
+  font-size: clamp(18px, 2vw, 25px);
+  line-height: 1.55;
+  font-weight: 600;
 }
 
 .spotlight-grid {
@@ -1670,6 +1735,12 @@ details {
     radial-gradient(circle at 80% 18%, rgba(127, 31, 26, 0.14), transparent 30%),
     radial-gradient(circle at 18% 18%, rgba(255, 112, 88, 0.16), transparent 28%),
     linear-gradient(135deg, #fffaf3 0%, #fff0ee 52%, #ffffff 100%);
+}
+
+.spotlight-card-offline::before {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 246, 244, 0.96) 68%),
+    url("../img/goepos-offline-online-showcase.png") center 18% / cover no-repeat;
 }
 
 .spotlight-card-copy,
@@ -2478,6 +2549,26 @@ details p {
 }
 
 @media (max-width: 600px) {
+  .spotlight-heading {
+    width: min(100% - 28px, 520px);
+    margin-bottom: 30px;
+  }
+
+  .spotlight-heading h2 {
+    font-size: 27px;
+    line-height: 1.12;
+  }
+
+  .spotlight-hero-image {
+    width: min(100% - 28px, 520px);
+    border-radius: 18px;
+    box-shadow: 0 18px 46px rgba(54, 27, 22, 0.14);
+  }
+
+  .spotlight-hero-image img {
+    aspect-ratio: 4 / 3;
+  }
+
   .goepos-hero-container {
     padding: 108px 18px 38px;
   }
@@ -3153,5 +3244,149 @@ body.nav-open .site-header {
 @media (max-width: 820px) {
   .goepos-hero-headline {
     white-space: normal;
+  }
+}
+
+/* Static two-card spotlight layout. */
+.spotlight-card {
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+  padding: 24px;
+  cursor: default;
+}
+
+.spotlight-card::before,
+.spotlight-action,
+.spotlight-close,
+.spotlight-card-detail {
+  display: none;
+}
+
+.spotlight-card:hover,
+.spotlight-card:focus-visible,
+.spotlight-card.is-active {
+  transform: none;
+  border-color: rgba(169, 44, 38, 0.16);
+  box-shadow: var(--shadow-soft);
+}
+
+.spotlight-card-visual {
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 24px;
+  border-radius: 18px;
+  background: #fff;
+  object-fit: contain;
+  object-position: center;
+}
+
+.spotlight-card-copy {
+  position: static;
+  grid-area: auto;
+  align-self: auto;
+  justify-self: auto;
+  max-width: none;
+  margin-top: 0;
+  text-align: left;
+  transform: none;
+}
+
+.spotlight-card h3 {
+  max-width: none;
+  margin-bottom: 12px;
+  font-size: clamp(28px, 3.2vw, 40px);
+}
+
+.spotlight-card p {
+  max-width: none;
+  margin: 0;
+  font-size: 17px;
+}
+
+@media (max-width: 600px) {
+  .spotlight-card {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .spotlight-card-visual {
+    margin-bottom: 20px;
+    border-radius: 14px;
+  }
+
+  .spotlight-card-copy {
+    margin-top: 0;
+  }
+
+  .spotlight-card h3 {
+    font-size: 28px;
+  }
+}
+
+/* Offline spotlight split layout. */
+.spotlight-offline-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 76px);
+}
+
+.spotlight-media-card {
+  width: min(100%, 520px);
+  justify-self: start;
+}
+
+.spotlight-media-card .spotlight-card-visual {
+  margin-bottom: 0;
+}
+
+.spotlight-security-layout {
+  grid-template-columns: minmax(320px, 1fr) minmax(280px, 0.9fr);
+  margin-top: 110px;
+}
+
+.spotlight-security-layout .spotlight-media-card {
+  justify-self: end;
+}
+
+.spotlight-offline-copy {
+  max-width: 600px;
+}
+
+.spotlight-offline-copy h3 {
+  margin: 0 0 18px;
+  color: var(--ink);
+  font-size: clamp(34px, 4.2vw, 58px);
+  line-height: 1.04;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.spotlight-offline-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(18px, 1.8vw, 23px);
+  line-height: 1.55;
+  font-weight: 600;
+}
+
+@media (max-width: 820px) {
+  .spotlight-offline-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .spotlight-security-layout {
+    margin-top: 76px;
+  }
+
+  .spotlight-media-card {
+    justify-self: center;
+  }
+
+  .spotlight-offline-copy {
+    max-width: none;
+    text-align: center;
   }
 }
