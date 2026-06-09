@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GoePOS - Aplikasi Kasir Cloud untuk Bisnis Kuliner</title>
+  <meta name="description" content="GoePOS adalah aplikasi kasir cloud untuk restoran, kafe, dan food truck. Bisa online dan offline, lengkap dengan pesanan lewat HP, KDS, stok, laporan, dan akses banyak pengguna.">
+  <link rel="shortcut icon" type="image/x-icon" href="img/ic_goe.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-967997502"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-967997502');
+
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-967997502/fcBiCP_bhe8YEL7wyc0D',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="GoePOS">
+      <img src="img/logo/logo_go_black.png" alt="GoePOS">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" data-nav>
+      <a href="#solusi"><span data-i18n="navSolutions">Solusi</span></a>
+      <a href="#alur"><span data-i18n="navWorkflow">Alur kerja</span></a>
+      <a href="#fitur"><span data-i18n="navFeatures">Fitur</span></a>
+      <a href="#harga"><span data-i18n="navPricing">Harga</span></a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="language-switch" aria-label="Pilih bahasa">
+      <button type="button" class="is-active" data-lang-option="id">ID</button>
+      <button type="button" data-lang-option="en">EN</button>
+    </div>
+    <a class="header-cta" href="https://play.google.com/store/apps/details?id=com.pos.goe" target="_blank" rel="noopener" onclick="gtag_report_conversion('https://play.google.com/store/apps/details?id=com.pos.goe')">
+      Google Play
+    </a>
+  </header>
+
+  <main id="home">
+    <section class="goepos-hero">
+      <div class="goepos-hero-container">
+        <div class="goepos-hero-left reveal">
+          <div class="goepos-hero-brand">
+            <span class="goe">Goe</span>
+            <span class="pos">POS</span>
+          </div>
+
+          <h1 class="goepos-hero-headline" data-i18n-html="heroHeadline">
+            Aplikasi kasir<span class="dot">.</span>
+          </h1>
+
+          <div class="goepos-hero-line"></div>
+
+          <h2 class="goepos-hero-title" data-i18n="heroDesignedTitle">Dirancang khusus</h2>
+
+          <div class="goepos-hero-features">
+            <div class="goepos-hero-feature">
+              <div class="goepos-hero-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M8 33a16 16 0 1 1 32 0" />
+                  <path d="M14 33h20" />
+                  <path d="M24 24l8-8" />
+                  <circle cx="24" cy="24" r="2.3" />
+                </svg>
+              </div>
+              <div class="goepos-hero-feature-text">
+                <h3 data-i18n="heroEasyTitle">Gak ribet</h3>
+                <p data-i18n-html="heroEasyText">Mudah digunakan,<br>siap pakai</p>
+              </div>
+            </div>
+
+            <div class="goepos-hero-feature">
+              <div class="goepos-hero-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M27 4L13 25h10l-3 19 15-23H24z" />
+                </svg>
+              </div>
+              <div class="goepos-hero-feature-text">
+                <h3 data-i18n="heroFastTitle">Anti lemot</h3>
+                <p data-i18n-html="heroFastText">Cepat di semua<br>perangkat</p>
+              </div>
+            </div>
+
+            <div class="goepos-hero-feature">
+              <div class="goepos-hero-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M24 5l14 6v10c0 9.5-5.8 17.4-14 21-8.2-3.6-14-11.5-14-21V11z" />
+                  <path d="M18 24l4 4 8-9" />
+                </svg>
+              </div>
+              <div class="goepos-hero-feature-text">
+                <h3 data-i18n="heroSafeTitle">99% anti error</h3>
+                <p data-i18n-html="heroSafeText">Transaksi aman,<br>data terlindungi</p>
+              </div>
+            </div>
+
+            <div class="goepos-hero-feature">
+              <div class="goepos-hero-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M5 25h9l4-8 7 16 5-11h13" />
+                </svg>
+              </div>
+              <div class="goepos-hero-feature-text">
+                <h3 data-i18n="heroStableTitle">Anti ngelag</h3>
+                <p data-i18n-html="heroStableText">Stabil dan lancar,<br>tanpa gangguan</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="goepos-hero-business">
+            <div class="goepos-hero-business-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M9 20h30" />
+                <path d="M12 20l3-10h18l3 10" />
+                <path d="M13 20v16a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V20" />
+                <path d="M19 38V28h10v10" />
+                <path d="M15 20c0 3 4.5 3 4.5 0" />
+                <path d="M19.5 20c0 3 4.5 3 4.5 0" />
+                <path d="M24 20c0 3 4.5 3 4.5 0" />
+                <path d="M28.5 20c0 3 4.5 3 4.5 0" />
+              </svg>
+            </div>
+            <div class="goepos-hero-business-text" data-i18n-html="heroBusinessText">
+              Khusus untuk bisnis<br>
+              <strong>restoran, cafe, rumah makan dan kuliner.</strong>
+            </div>
+          </div>
+
+          <a class="goepos-hero-cta" href="https://play.google.com/store/apps/details?id=com.pos.goe" target="_blank" rel="noopener" onclick="gtag_report_conversion('https://play.google.com/store/apps/details?id=com.pos.goe')">
+            <span class="label" data-i18n="downloadPlay">Gratis, coba sekarang</span>
+            <span class="arrow-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h12" />
+                <path d="M13 6l6 6-6 6" />
+              </svg>
+            </span>
+          </a>
+
+          <div class="goepos-hero-support">
+            <div class="goepos-hero-support-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M10 35l2-6c-3.2-2.6-5-6-5-10 0-8.2 7.6-14 17-14s17 5.8 17 14-7.6 14-17 14c-2.7 0-5.3-.5-7.6-1.5z" />
+                <path d="M18 19h.01M24 19h.01M30 19h.01" />
+              </svg>
+            </div>
+            <div class="goepos-hero-support-text">
+              <h4 data-i18n="heroSupportTitle">Dukungan Chat Langsung</h4>
+              <p data-i18n-html="heroSupportText">Support langsung live<br>chating via aplikasi</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="goepos-hero-right reveal">
+          <div class="goepos-devices-stage">
+            <img
+              id="heroDevicesImg"
+              class="goepos-hero-devices-img"
+              src="img/goepos-hero-cafe-devices.png"
+              alt="Perangkat Goe POS"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad spotlight-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="spotlightEyebrow">Cepat & Tidak Ribet</p>
+        </div>
+
+        <div class="spotlight-grid" data-spotlight>
+          <article class="spotlight-card spotlight-card-pay reveal" tabindex="0" aria-expanded="false" data-spotlight-card="pay">
+            <button class="spotlight-close" type="button" aria-label="Tutup detail" data-spotlight-close>
+              <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <div class="spotlight-card-copy">
+              <h3 data-i18n="spotlightPayTitle">Transaksi Cepat untuk Kasir</h3>
+              <p data-i18n="spotlightPayText">Layani pelanggan lebih cepat, tanpa bikin antrean panjang</p>
+            </div>
+            <div class="spotlight-card-detail">
+              <img class="spotlight-card-image" src="img/screenshots/transaksi-cepat-kasir.jpeg" alt="Tampilan transaksi cepat GoePOS">
+              <p data-i18n="spotlightPayDetailText">Pilih menu, catat pesanan, beri diskon, pilih pembayaran, dan selesaikan transaksi tanpa banyak pindah halaman. GoePOS tetap bisa digunakan saat offline dan otomatis menyinkronkan data saat online kembali</p>
+            </div>
+            <span class="spotlight-action" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+          </article>
+
+          <article class="spotlight-card spotlight-card-lens reveal" tabindex="0" aria-expanded="false" data-spotlight-card="lens">
+            <button class="spotlight-close" type="button" aria-label="Tutup detail" data-spotlight-close>
+              <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <div class="spotlight-card-copy">
+              <h3 data-i18n="spotlightLensTitle">Fleksibilitas Transaksi</h3>
+              <p data-i18n="spotlightLensText">Split pembayaran, split menu, atau tahan transaksi dengan lebih mudah.</p>
+            </div>
+            <div class="spotlight-card-detail">
+              <img class="spotlight-card-image spotlight-card-image-portrait" src="img/screenshots/fleksibilitas-transaksi.jpeg" alt="Tampilan fleksibilitas transaksi GoePOS">
+              <p data-i18n="spotlightLensDetailText">Uang pelanggan kurang? ingin bayar patungan sesuai pesanan? ingin tunda pembayaran sebentar? Dengan GoePOS, kasir bisa split pembayaran, split menu, dan hold transaksi dengan mudah, tanpa membuat antrean berhenti</p>
+            </div>
+            <span class="spotlight-action" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="solusi" class="section-pad business-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="businessEyebrow">Dibuat untuk bisnis kuliner</p>
+          <h2 data-i18n="businessTitle">Cocok untuk outlet kecil sampai usaha yang timnya mulai ramai.</h2>
+          <p data-i18n="businessLead">Setiap tempat makan punya ritme sendiri. GoePOS membantu alurnya tetap enak diikuti, dari pelanggan pesan, pesanan masuk ke dapur, sampai laporan tutup kasir.</p>
+        </div>
+        <div class="business-grid">
+          <article class="business-card reveal">
+            <span class="card-icon"><i class="fas fa-utensils"></i></span>
+            <h3 data-i18n="businessRestaurantTitle">Restoran</h3>
+            <p data-i18n="restaurantText">Order meja, kasir, dapur, dan laporan harian tersusun lebih jelas.</p>
+          </article>
+          <article class="business-card reveal">
+            <span class="card-icon blue"><i class="fas fa-coffee"></i></span>
+            <h3 data-i18n="businessCafeTitle">Kafe</h3>
+            <p data-i18n="cafeText">Cocok untuk dine-in, takeaway, dan antrean yang harus dilayani cepat.</p>
+          </article>
+          <article class="business-card reveal">
+            <span class="card-icon green"><i class="fas fa-truck"></i></span>
+            <h3 data-i18n="businessTruckTitle">Food truck</h3>
+            <p data-i18n="truckText">Tetap bisa jualan di lokasi yang koneksinya belum tentu stabil.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad pillars-section">
+      <div class="container">
+        <div class="pillars-grid">
+          <article class="pillar-card reveal">
+            <div class="pillar-top">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h2 data-i18n="pillarFastTitle">Cepat</h2>
+            <p data-i18n="fastText">Input order dibuat cepat, termasuk dukungan keyboard fisik 3 digit untuk outlet yang transaksinya padat.</p>
+          </article>
+          <article class="pillar-card reveal">
+            <div class="pillar-top">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h2 data-i18n="pillarStableTitle">Stabil</h2>
+            <p data-i18n="stableText">Saat internet lambat atau putus, kasir tetap bisa berjalan dan sinkron lagi tanpa setup manual.</p>
+          </article>
+          <article class="pillar-card reveal">
+            <div class="pillar-top">
+              <i class="fas fa-random"></i>
+            </div>
+            <h2 data-i18n="pillarFlexTitle">Fleksibel</h2>
+            <p data-i18n="flexText">Dari pesanan sederhana sampai bagi tagihan, tahan transaksi, dan reservasi, alurnya bisa mengikuti cara kerja outlet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="alur" class="section-pad workflow-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="workflowEyebrow">Alur kerja restoran</p>
+          <h2 data-i18n="workflowTitle">Pesanan masuk, dapur bergerak, kasir beres, laporan siap dicek.</h2>
+        </div>
+        <div class="workflow">
+          <article class="workflow-step reveal">
+            <span data-i18n="workflowOrderLabel">Pesan</span>
+            <h3 data-i18n="workflowOrderTitle">Pelayan input pesanan</h3>
+            <p data-i18n="workflowOrderText">Pesanan dari HP atau tablet langsung masuk ke sistem. Pelayan tidak perlu bolak-balik bawa catatan kertas.</p>
+          </article>
+          <article class="workflow-step reveal">
+            <span data-i18n="workflowCashierLabel">Kasir</span>
+            <h3 data-i18n="workflowCashierTitle">Kasir proses pembayaran</h3>
+            <p data-i18n="workflowCashierText">Kasir menghitung transaksi, membagi tagihan bila perlu, mencetak struk, dan mencatat pengeluaran outlet.</p>
+          </article>
+          <article class="workflow-step reveal">
+            <span data-i18n="workflowKitchenLabel">Dapur</span>
+            <h3 data-i18n="workflowKitchenTitle">Dapur langsung tahu</h3>
+            <p data-i18n="workflowKitchenText">Pesanan bisa tampil di KDS atau dicetak ke printer dapur, bar, maupun kasir sesuai kebutuhan outlet.</p>
+          </article>
+          <article class="workflow-step reveal">
+            <span data-i18n="workflowReportLabel">Laporan</span>
+            <h3 data-i18n="workflowReportTitle">Laporan siap dicek</h3>
+            <p data-i18n="workflowReportText">Pemilik bisa melihat ringkasan penjualan, mengunduh laporan PDF, atau mencetaknya untuk arsip.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur" class="section-pad features-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="featuresEyebrow">Fitur utama</p>
+          <h2 data-i18n="featuresTitle">Yang dibutuhkan outlet ada, tapi tetap mudah dipakai.</h2>
+          <p data-i18n="featuresLead">Fitur GoePOS dirancang untuk pekerjaan harian di outlet, bukan sekadar daftar menu di aplikasi. Tim bisa fokus melayani, sementara data tetap tercatat rapi.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <i class="fas fa-calculator"></i>
+            <h3 data-i18n="featureOfflineTitle">Kasir online dan offline</h3>
+            <p data-i18n="featureOfflineText">Transaksi tetap bisa dicatat saat internet tidak stabil, lalu sinkron lagi tanpa pengaturan manual.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-mobile-alt"></i>
+            <h3 data-i18n="featureOrderingTitle">Pesanan lewat HP dan POS pelayan</h3>
+            <p data-i18n="featureOrderingText">Pelayan bisa input order dari HP atau tablet Android, lalu pesanan langsung terkirim ke kasir dan dapur.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-desktop"></i>
+            <h3 data-i18n="featureKdsTitle">Kitchen Display System</h3>
+            <p data-i18n="featureKdsText">Dapur lebih mudah membaca pesanan, mengatur urutan masak, dan mengurangi order yang terlewat.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-cubes"></i>
+            <h3 data-i18n="featureStockTitle">Stok produk dan bahan baku</h3>
+            <p data-i18n="featureStockText">Pantau stok produk dan bahan baku supaya belanja dan produksi lebih terukur.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-credit-card"></i>
+            <h3 data-i18n="featureExpenseTitle">Pengeluaran kasir</h3>
+            <p data-i18n="featureExpenseText">Catat belanja kecil, kebutuhan operasional, atau pengeluaran harian dari kas outlet.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-users"></i>
+            <h3 data-i18n="featureUserTitle">Akses sesuai peran</h3>
+            <p data-i18n="featureUserText">Pemilik, kasir, pelayan, dan tim dapur bisa mendapat akses sesuai tugasnya masing-masing.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-bolt"></i>
+            <h3 data-i18n="featureFastTitle">Transaksi cepat</h3>
+            <p data-i18n="featureFastText">Alur kasir dibuat praktis, termasuk dukungan keyboard fisik 3 digit untuk input yang lebih cepat.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-file-pdf"></i>
+            <h3 data-i18n="featureReportTitle">Laporan PDF dan cetak</h3>
+            <p data-i18n="featureReportText">Laporan bisa dipantau online, diunduh sebagai PDF atau XLS, dan dicetak langsung dari printer kasir.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <h3 data-i18n="featureCloudTitle">Sinkronisasi cloud</h3>
+            <p data-i18n="featureCloudText">Data outlet tersinkron melalui sistem cloud dengan data center standar tier 1.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-shield-alt"></i>
+            <h3 data-i18n="featureReceiptTitle">Struk lebih aman</h3>
+            <p data-i18n="featureReceiptText">Riwayat struk dibuat lebih aman sehingga transaksi tidak mudah hilang atau dihapus sembarangan.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-random"></i>
+            <h3 data-i18n="featureSplitTitle">Bagi tagihan, tahan transaksi, dan reservasi</h3>
+            <p data-i18n="featureSplitText">Berguna saat pelanggan ingin berbagi tagihan, menahan transaksi, atau memesan lebih dulu.</p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fas fa-print"></i>
+            <h3 data-i18n="featurePrinterTitle">Printer dapur, kasir, dan bar</h3>
+            <p data-i18n="featurePrinterText">Cetak order dan struk ke titik yang tepat agar alur kerja tiap bagian lebih lancar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad showcase-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="showcaseEyebrow">Tampilan aplikasi</p>
+          <h2 data-i18n="showcaseTitle">Lihat beberapa alur yang dipakai tim setiap hari.</h2>
+          <p data-i18n="showcaseLead">Dari memilih produk, mengelola order berjalan, memproses pembayaran, sampai membuka struk, semua dibuat dekat dengan ritme kerja outlet.</p>
+        </div>
+        <div class="showcase-grid">
+          <article class="showcase-card reveal">
+            <img src="img/screenshots/product_list.jpeg" alt="Daftar produk dan kategori GoePOS">
+            <div>
+              <h3 data-i18n="showcaseProductsTitle">Produk dan kategori</h3>
+              <p data-i18n="showcaseProductsText">Kasir bisa memilih kategori dan produk dengan cepat, lengkap dengan harga yang langsung siap masuk ke order.</p>
+            </div>
+          </article>
+          <article class="showcase-card reveal">
+            <img src="img/screenshots/kitchen_display.jpeg" alt="Daftar order berjalan GoePOS">
+            <div>
+              <h3 data-i18n="showcaseKitchenTitle">Order berjalan</h3>
+              <p data-i18n="showcaseKitchenText">Tim bisa memantau pesanan yang masih aktif, melihat status pembayaran, dan menandai order selesai tanpa kehilangan konteks.</p>
+            </div>
+          </article>
+          <article class="showcase-card reveal">
+            <img src="img/screenshots/cart_ordered_item.jpeg" alt="Keranjang order dan metode pembayaran GoePOS">
+            <div>
+              <h3 data-i18n="showcaseCartTitle">Keranjang dan pembayaran</h3>
+              <p data-i18n="showcaseCartText">Item order, tipe layanan, pelanggan, dan metode pembayaran berada dalam satu layar sehingga kasir bisa bekerja lebih cepat.</p>
+            </div>
+          </article>
+          <article class="showcase-card reveal">
+            <img src="img/screenshots/receipt.jpeg" alt="Detail struk penjualan GoePOS">
+            <div>
+              <h3 data-i18n="showcaseReceiptTitle">Struk penjualan</h3>
+              <p data-i18n="showcaseReceiptText">Detail pembayaran, item transaksi, QR struk online, refund, dan cetak struk tersedia jelas setelah transaksi selesai.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad split-section">
+      <div class="container split-grid">
+        <div class="split-copy reveal">
+          <p class="eyebrow" data-i18n="offlineEyebrow">Online/offline</p>
+          <h2 data-i18n="offlineTitle">Internet tidak selalu mulus. Kasir tetap harus siap.</h2>
+          <p data-i18n="offlineText">Di jam sibuk, gangguan koneksi bisa bikin panik. Dengan mode offline dan sync otomatis, transaksi tetap dicatat dulu, lalu data menyusul saat internet kembali normal.</p>
+          <ul class="check-list">
+            <li data-i18n="offlinePoint1">Mode offline tanpa pengaturan rumit</li>
+            <li data-i18n="offlinePoint2">Sinkronisasi tanpa setup manual saat koneksi kembali</li>
+            <li data-i18n="offlinePoint3">Cocok untuk outlet dengan jaringan yang sering berubah</li>
+          </ul>
+        </div>
+        <div class="sync-visual reveal">
+          <div class="sync-card active">
+            <span data-i18n="syncOutletLabel">Kasir outlet</span>
+            <strong data-i18n="syncOffline">Mode offline</strong>
+          </div>
+          <div class="sync-line"></div>
+          <div class="sync-card cloud">
+            <span data-i18n="syncCloudLabel">Cloud GoePOS</span>
+            <strong data-i18n="syncAuto">Auto sync</strong>
+          </div>
+          <div class="sync-line"></div>
+          <div class="sync-card">
+            <span data-i18n="syncOwnerLabel">Pemilik</span>
+            <strong data-i18n="syncReports">Laporan online</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad reports-section">
+      <div class="container reports-grid">
+        <div class="report-preview reveal">
+          <div class="report-window">
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <img src="img/screenshots/report-en.jpeg" alt="Monthly report screen in GoePOS" data-report-image>
+            <div class="report-stat">
+              <small data-i18n="reportStatLabel">Ringkasan penjualan</small>
+              <strong data-i18n="reportBadge">PDF, XLS, dan Cetak</strong>
+            </div>
+          </div>
+        </div>
+        <div class="split-copy reveal">
+          <p class="eyebrow" data-i18n="reportEyebrow">Monitoring bisnis</p>
+          <h2 data-i18n="reportTitle">Buka laporan tanpa harus selalu datang ke outlet.</h2>
+          <p data-i18n="reportText">Penjualan, stok, dan pengeluaran kasir lebih mudah dicek. Laporan bisa diunduh dalam format PDF atau XLS, lalu dicetak saat dibutuhkan.</p>
+          <div class="mini-grid">
+            <span data-i18n="miniSales">Penjualan harian</span>
+            <span data-i18n="miniStock">Produk dan stok</span>
+            <span data-i18n="miniExpense">Pengeluaran kasir</span>
+            <span data-i18n="miniPrint">Cetak laporan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="harga" class="section-pad pricing-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="pricingEyebrow">Harga sederhana</p>
+          <h2 data-i18n="pricingTitle">Tidak ada iklan, tidak ada biaya fitur tambahan yang bikin kaget.</h2>
+          <p data-i18n="pricingText">GoePOS memakai pembelian dalam aplikasi. Level penggunaan bisa dipilih dari aplikasi, sementara fitur utamanya tetap dibuat terbuka untuk kebutuhan outlet.</p>
+        </div>
+        <div class="pricing-card reveal">
+          <div>
+            <span class="price-label" data-i18n="priceLabel">Mulai dari</span>
+            <h3 data-i18n="priceTitle">Unduh gratis</h3>
+            <p data-i18n="pricingCardText">Coba aplikasinya dulu. Saat transaksi, produk, atau jumlah staf bertambah, level penggunaan bisa disesuaikan dari menu aplikasi.</p>
+          </div>
+          <ul class="check-list">
+            <li data-i18n="pricingPoint1">Tanpa iklan dan tanpa biaya fitur tambahan</li>
+            <li data-i18n="pricingPoint2">Level menyesuaikan transaksi, produk, dan staf</li>
+            <li data-i18n="pricingPoint3">Pembayaran melalui Google Play</li>
+          </ul>
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.pos.goe" target="_blank" rel="noopener" onclick="gtag_report_conversion('https://play.google.com/store/apps/details?id=com.pos.goe')">
+            <span data-i18n="pricingCta">Download sekarang</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section-pad faq-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 data-i18n="faqTitle">Pertanyaan yang sering ditanyakan.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="reveal" open>
+            <summary data-i18n="faqOneTitle">Apa itu GoePOS?</summary>
+            <p data-i18n="faqOneText">GoePOS adalah aplikasi kasir untuk restoran, kafe, dan food truck. Di dalamnya ada kasir online/offline, POS pelayan, KDS, stok, pengeluaran, laporan, dan akses untuk banyak pengguna.</p>
+          </details>
+          <details class="reveal">
+            <summary data-i18n="faqTwoTitle">Apakah GoePOS bisa digunakan saat internet mati?</summary>
+            <p data-i18n="faqTwoText">Bisa. Kasir tetap dapat mencatat transaksi dalam mode offline dan menyinkronkan data kembali saat internet tersedia.</p>
+          </details>
+          <details class="reveal">
+            <summary data-i18n="faqThreeTitle">Siapa saja yang bisa memakai GoePOS?</summary>
+            <p data-i18n="faqThreeText">GoePOS mendukung akses untuk pemilik, kasir, pelayan, dan tim dapur. Setiap orang bisa fokus ke tugasnya tanpa perlu membuka seluruh bagian sistem.</p>
+          </details>
+          <details class="reveal">
+            <summary data-i18n="faqFourTitle">Bagaimana cara berlangganan?</summary>
+            <p data-i18n="faqFourText">Download aplikasi GoePOS di Google Play, lalu pilih level langganan dari menu pengaturan aplikasi sesuai kebutuhan bisnis.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-pad">
+      <div class="container final-cta-inner reveal">
+        <div>
+          <p class="eyebrow" data-i18n="finalEyebrow">Siap coba?</p>
+          <h2 data-i18n="finalTitle">Mulai dari satu outlet dulu. Kalau cocok, tinggal kembangkan pelan-pelan.</h2>
+        </div>
+        <a class="btn btn-light" href="https://play.google.com/store/apps/details?id=com.pos.goe" target="_blank" rel="noopener" onclick="gtag_report_conversion('https://play.google.com/store/apps/details?id=com.pos.goe')">
+          <i class="fab fa-google-play"></i>
+          <span data-i18n="downloadGoePOS">Download GoePOS</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="footer-brand" href="#home">
+        <img src="img/logo/logo_go_black.png" alt="GoePOS">
+      </a>
+      <p data-i18n="footerText">Aplikasi kasir untuk restoran, kafe, dan food truck.</p>
+      <div class="footer-contact">
+        <span>Indonesia. 36129.</span>
+        <a href="mailto:hallo@goepos.id">hallo@goepos.id</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/landing.js"></script>
+</body>
+</html>
