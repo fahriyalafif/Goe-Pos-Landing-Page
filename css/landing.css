@@ -3428,6 +3428,53 @@ body.nav-open .site-header {
   object-position: center;
 }
 
+.team-routing-section {
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.team-routing-heading {
+  width: min(980px, 100%);
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.team-routing-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(34px, 4.8vw, 64px);
+  line-height: 1.06;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.team-routing-visual {
+  width: min(1120px, 100%);
+  margin: 0 auto 42px;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #271813;
+  box-shadow: 0 30px 80px rgba(54, 27, 22, 0.16);
+}
+
+.team-routing-visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.team-routing-description {
+  width: min(850px, 100%);
+  margin: 0 auto;
+  color: var(--muted);
+  text-align: center;
+  font-size: clamp(18px, 1.7vw, 23px);
+  line-height: 1.58;
+  font-weight: 600;
+}
+
 @media (max-width: 820px) {
   .spotlight-offline-layout {
     grid-template-columns: 1fr;
@@ -3454,6 +3501,10 @@ body.nav-open .site-header {
   .flexible-transaction-card {
     min-height: auto;
   }
+
+  .team-routing-visual {
+    border-radius: 22px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3471,5 +3522,26 @@ body.nav-open .site-header {
 
   .flexible-transaction-card {
     border-radius: 20px;
+  }
+
+  .team-routing-heading {
+    margin-bottom: 30px;
+  }
+
+  .team-routing-heading h2 {
+    font-size: 30px;
+  }
+
+  .team-routing-visual {
+    margin-bottom: 30px;
+    border-radius: 18px;
+  }
+
+  .team-routing-visual img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .team-routing-description {
+    font-size: 16px;
   }
 }
