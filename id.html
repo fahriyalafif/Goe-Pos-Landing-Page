@@ -34,28 +34,6 @@
   </script>
 </head>
 <body>
-  <header class="site-header" data-header>
-    <a class="brand" href="#home" aria-label="GoePOS">
-      <img src="img/logo/logo_go_black.png" alt="GoePOS">
-    </a>
-    <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" data-nav-toggle>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav class="site-nav" data-nav>
-      <a href="#harga"><span data-i18n="navPricing">Harga</span></a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <div class="language-switch" aria-label="Pilih bahasa">
-      <button type="button" class="is-active" data-lang-option="id">ID</button>
-      <button type="button" data-lang-option="en">EN</button>
-    </div>
-    <a class="header-cta" href="https://play.google.com/store/apps/details?id=com.pos.goe" target="_blank" rel="noopener" onclick="gtag_report_conversion('https://play.google.com/store/apps/details?id=com.pos.goe')">
-      Google Play
-    </a>
-  </header>
-
   <main id="home">
     <section class="goepos-hero">
       <div class="goepos-hero-container">
@@ -286,16 +264,28 @@
       </div>
     </section>
 
+    <section class="section-pad table-management-section">
+      <div class="container">
+        <article class="table-management-card reveal">
+          <figure class="table-management-media">
+            <img src="img/goepos-table-management-showcase.png" alt="Tampilan manajemen meja GoePOS">
+          </figure>
+          <div class="table-management-copy">
+            <h2 data-i18n="tableManagementTitle">Meja Rapi, Layanan Lancar.</h2>
+            <p data-i18n="tableManagementText">Dengan GoePOS, tim bisa melihat denah meja secara visual, memantau status meja, menggabungkan beberapa meja untuk pelanggan rombongan, memindahkan pelanggan ke meja lain, dan melihat riwayat aktivitas meja dalam satu tampilan yang rapi</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section id="harga" class="section-pad pricing-section">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow" data-i18n="pricingEyebrow">Harga sederhana</p>
           <h2 data-i18n="pricingTitle">Tidak ada iklan, tidak ada biaya fitur tambahan yang bikin kaget.</h2>
           <p data-i18n="pricingText">GoePOS memakai pembelian dalam aplikasi. Level penggunaan bisa dipilih dari aplikasi, sementara fitur utamanya tetap dibuat terbuka untuk kebutuhan outlet.</p>
         </div>
         <div class="pricing-card reveal">
           <div>
-            <span class="price-label" data-i18n="priceLabel">Mulai dari</span>
             <h3 data-i18n="priceTitle">Unduh gratis</h3>
             <p data-i18n="pricingCardText">Coba aplikasinya dulu. Saat transaksi, produk, atau jumlah staf bertambah, level penggunaan bisa disesuaikan dari menu aplikasi.</p>
           </div>
@@ -314,7 +304,6 @@
     <section id="faq" class="section-pad faq-section">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">FAQ</p>
           <h2 data-i18n="faqTitle">Pertanyaan yang sering ditanyakan.</h2>
         </div>
         <div class="faq-list">
