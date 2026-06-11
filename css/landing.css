@@ -3475,6 +3475,60 @@ body.nav-open .site-header {
   font-weight: 600;
 }
 
+.receipt-promo-section {
+  overflow: hidden;
+  background: linear-gradient(180deg, #fff8f7 0%, #ffffff 100%);
+}
+
+.receipt-promo-heading {
+  width: min(980px, 100%);
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.receipt-promo-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(34px, 4.8vw, 64px);
+  line-height: 1.06;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.receipt-promo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.5vw, 28px);
+  align-items: stretch;
+}
+
+.receipt-promo-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(169, 44, 38, 0.14);
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.receipt-promo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.receipt-promo-card p {
+  margin: 0;
+  padding: 24px;
+  color: var(--muted);
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.5;
+  font-weight: 700;
+}
+
 @media (max-width: 820px) {
   .spotlight-offline-layout {
     grid-template-columns: 1fr;
@@ -3504,6 +3558,10 @@ body.nav-open .site-header {
 
   .team-routing-visual {
     border-radius: 22px;
+  }
+
+  .receipt-promo-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -3542,6 +3600,23 @@ body.nav-open .site-header {
   }
 
   .team-routing-description {
+    font-size: 16px;
+  }
+
+  .receipt-promo-heading {
+    margin-bottom: 30px;
+  }
+
+  .receipt-promo-heading h2 {
+    font-size: 30px;
+  }
+
+  .receipt-promo-card {
+    border-radius: 20px;
+  }
+
+  .receipt-promo-card p {
+    padding: 18px;
     font-size: 16px;
   }
 }
