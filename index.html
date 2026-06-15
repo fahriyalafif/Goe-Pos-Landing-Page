@@ -9,7 +9,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/ic_goe.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <link rel="stylesheet" href="css/landing.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-967997502"></script>
@@ -34,6 +34,11 @@
   </script>
 </head>
 <body>
+  <div class="language-switch" aria-label="Pilihan bahasa">
+    <button type="button" data-lang-option="id">ID</button>
+    <button type="button" data-lang-option="en">EN</button>
+  </div>
+
   <main id="home">
     <section class="goepos-hero">
       <div class="goepos-hero-container">
@@ -120,7 +125,7 @@
             </div>
             <div class="goepos-hero-business-text" data-i18n-html="heroBusinessText">
               Khusus untuk bisnis<br>
-              <strong>restoran, cafe, rumah makan dan kuliner.</strong>
+              <strong>Restoran, cafe, rumah makan dan kuliner.</strong>
             </div>
           </div>
 
@@ -351,44 +356,52 @@
       </div>
     </section>
 
-    <section id="faq" class="section-pad faq-section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2 data-i18n="faqTitle">Pertanyaan yang sering ditanyakan.</h2>
-        </div>
-        <div class="faq-list">
-          <details class="reveal" open>
-            <summary data-i18n="faqOneTitle">Apa itu GoePOS?</summary>
-            <p data-i18n="faqOneText">GoePOS adalah aplikasi kasir untuk restoran, kafe, rumah makan, dan kuliner. Di dalamnya ada kasir online/offline, POS pelayan, KDS, stok, pengeluaran, laporan, dan akses untuk banyak pengguna.</p>
-          </details>
-          <details class="reveal">
-            <summary data-i18n="faqTwoTitle">Apakah GoePOS bisa digunakan saat internet mati?</summary>
-            <p data-i18n="faqTwoText">Bisa. Kasir tetap dapat mencatat transaksi dalam mode offline dan menyinkronkan data kembali saat internet tersedia.</p>
-          </details>
-          <details class="reveal">
-            <summary data-i18n="faqThreeTitle">Siapa saja yang bisa memakai GoePOS?</summary>
-            <p data-i18n="faqThreeText">GoePOS mendukung akses untuk pemilik, kasir, pelayan, dan tim dapur. Setiap orang bisa fokus ke tugasnya tanpa perlu membuka seluruh bagian sistem.</p>
-          </details>
-          <details class="reveal">
-            <summary data-i18n="faqFourTitle">Bagaimana cara berlangganan?</summary>
-            <p data-i18n="faqFourText">Download aplikasi GoePOS di Google Play, lalu pilih level langganan dari menu pengaturan aplikasi sesuai kebutuhan bisnis.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <a class="footer-brand" href="#home">
-        <img src="img/logo/logo_go_black.png" alt="GoePOS">
-      </a>
-      <p data-i18n="footerText">Aplikasi kasir untuk restoran, kafe, dan food truck.</p>
-      <div class="footer-contact">
-        <span>Indonesia. 36129.</span>
-        <a href="mailto:hallo@goepos.id">hallo@goepos.id</a>
+      <section class="footer-column">
+        <h2>Goe POS Company</h2>
+        <div class="footer-links">
+          <span>Indonesia. 36129.</span>
+          <a href="mailto:hallo@goepos.id">hallo@goepos.id</a>
+        </div>
+        <div class="footer-social" aria-label="Goe POS social media">
+          <a href="https://www.instagram.com/goe_pos" target="_blank" rel="noopener" aria-label="Goe POS Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.youtube.com/@goeposrestaurantandcafe" target="_blank" rel="noopener" aria-label="Goe POS YouTube">
+            <i class="fab fa-youtube" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="footer-column">
+        <h2>Goe POS Company</h2>
+        <div class="footer-links">
+          <a href="https://play.google.com/store/apps/details?id=com.pos.goe" target="_blank" rel="noopener">Goe POS Pro</a>
+          <a href="https://play.google.com/store/apps/details?id=com.pos.goe.free" target="_blank" rel="noopener">Goe POS Lite UMKM 100% Free</a>
+        </div>
+      </section>
+
+      <section class="footer-column footer-download">
+        <h2>Download</h2>
+        <a class="footer-play-badge" href="https://play.google.com/store/apps/details?id=com.pos.goe" target="_blank" rel="noopener" aria-label="Download Goe POS on Google Play">
+          <i class="fab fa-google-play" aria-hidden="true"></i>
+          <span>
+            <small>Get it on</small>
+            Google Play
+          </span>
+        </a>
+      </section>
+    </div>
+    <div class="container footer-bottom">
+      <div class="footer-copyright">
+        <i class="far fa-copyright" aria-hidden="true"></i>
+        <span>2026</span>
+        <span>Goe POS Company</span>
       </div>
+      <a href="https://goepos.id/privacypolicy" target="_blank" rel="noopener">Privacy Policy</a>
     </div>
   </footer>
 

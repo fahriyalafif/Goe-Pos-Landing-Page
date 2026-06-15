@@ -24,10 +24,11 @@
 
 
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
- body {
-	font-family: 'Nunito', sans-serif;
-	font-weight: normal;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+	font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -86,12 +87,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Nunito', sans-serif;
-	font-weight: normal;
+	font-family: 'Poppins', 'Inter', sans-serif;
+	font-weight: 600;
 	color: #313552;
 	margin-top: 0px;
 	font-style: normal;
-	font-weight: 400;
 	text-transform: normal;
 }
 h1 a,
