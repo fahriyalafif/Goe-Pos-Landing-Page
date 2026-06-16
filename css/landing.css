@@ -3462,6 +3462,11 @@ body.nav-open .site-header {
   object-fit: cover;
 }
 
+.spotlight-card-offline .spotlight-card-visual {
+  background: #ffffff;
+  object-fit: contain;
+}
+
 .spotlight-security-layout {
   grid-template-columns: minmax(360px, 0.95fr) minmax(420px, 1fr);
   margin-top: 110px;
@@ -3726,6 +3731,7 @@ body.nav-open .site-header {
 .table-management-media {
   margin: 0;
   overflow: hidden;
+  padding: clamp(16px, 2.2vw, 26px);
   border-radius: 22px;
   background: #ffffff;
   box-shadow: 0 24px 70px rgba(54, 27, 22, 0.13);
@@ -3735,6 +3741,7 @@ body.nav-open .site-header {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
+  border-radius: 16px;
   object-fit: cover;
   object-position: center;
 }
@@ -3824,6 +3831,7 @@ body.nav-open .site-header {
 
 .cashier-shift-media {
   width: 100%;
+  aspect-ratio: 1 / 1;
   justify-self: stretch;
   margin: 0;
   overflow: hidden;
@@ -3836,8 +3844,9 @@ body.nav-open .site-header {
 .cashier-shift-media img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: 100%;
+  background: #ffffff;
+  object-fit: contain;
   object-position: center;
 }
 
