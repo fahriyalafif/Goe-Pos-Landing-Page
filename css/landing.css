@@ -3441,22 +3441,29 @@ body.nav-open .site-header {
 /* Offline spotlight split layout. */
 .spotlight-offline-layout {
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1fr);
+  grid-template-columns: minmax(420px, 1fr) minmax(360px, 0.95fr);
   align-items: center;
   gap: clamp(32px, 6vw, 76px);
 }
 
 .spotlight-media-card {
-  width: min(100%, 520px);
+  width: min(100%, 620px);
   justify-self: start;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 28px;
 }
 
 .spotlight-media-card .spotlight-card-visual {
+  width: 100%;
+  aspect-ratio: 4 / 3;
   margin-bottom: 0;
+  border-radius: inherit;
+  object-fit: cover;
 }
 
 .spotlight-security-layout {
-  grid-template-columns: minmax(320px, 1fr) minmax(280px, 0.9fr);
+  grid-template-columns: minmax(360px, 0.95fr) minmax(420px, 1fr);
   margin-top: 110px;
 }
 
@@ -3567,15 +3574,15 @@ body.nav-open .site-header {
   margin: 0 auto 42px;
   overflow: hidden;
   border-radius: 28px;
-  background: #271813;
+  background: #ffffff;
   box-shadow: 0 30px 80px rgba(54, 27, 22, 0.16);
 }
 
 .team-routing-visual img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -3706,7 +3713,7 @@ body.nav-open .site-header {
 
 .table-management-card {
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+  grid-template-columns: minmax(420px, 1fr) minmax(360px, 0.95fr);
   align-items: center;
   gap: clamp(28px, 5vw, 70px);
   padding: clamp(18px, 3vw, 34px);
@@ -3727,7 +3734,7 @@ body.nav-open .site-header {
 .table-management-media img {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center;
 }
@@ -3789,7 +3796,7 @@ body.nav-open .site-header {
 
 .cashier-shift-card {
   display: grid;
-  grid-template-columns: minmax(300px, 0.95fr) minmax(320px, 1.05fr);
+  grid-template-columns: minmax(360px, 0.95fr) minmax(420px, 1fr);
   align-items: center;
   gap: clamp(28px, 5vw, 70px);
 }
@@ -3829,7 +3836,7 @@ body.nav-open .site-header {
 .cashier-shift-media img {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center;
 }
