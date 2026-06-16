@@ -3130,7 +3130,7 @@ body.nav-open .site-header {
 /* Hero refinements requested after visual review. */
 .goepos-hero-container {
   width: 100%;
-  padding: 20px 0 28px 78px;
+  padding: 20px 0 0 78px;
   grid-template-columns: minmax(430px, 0.78fr) minmax(0, 1.22fr);
   gap: 10px;
 }
@@ -3297,6 +3297,7 @@ body.nav-open .site-header {
 }
 
 .goepos-devices-stage::after {
+  content: none;
   left: 0;
   right: 0;
   bottom: 0;
@@ -3336,7 +3337,7 @@ body.nav-open .site-header {
 @media (max-width: 1080px) {
   .goepos-hero-container {
     width: min(100% - 32px, 860px);
-    padding: 64px 0 34px;
+    padding: 64px 0 0;
     grid-template-columns: 1fr;
   }
 
