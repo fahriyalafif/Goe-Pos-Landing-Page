@@ -5,6 +5,16 @@
   var revealItems = document.querySelectorAll(".reveal");
   var languageButtons = document.querySelectorAll("[data-lang-option]");
   var defaultLang = document.documentElement.getAttribute("data-lang") || "en";
+  var goeposPlayUrls = {
+    pro: {
+      id: "https://play.google.com/store/apps/details?id=com.pos.goe&hl=id",
+      en: "https://play.google.com/store/apps/details?id=com.pos.goe"
+    },
+    lite: {
+      id: "https://play.google.com/store/apps/details?id=com.pos.goe.free&hl=id",
+      en: "https://play.google.com/store/apps/details?id=com.pos.goe.free"
+    }
+  };
   var translations = {
     id: {
       heroHeadline: "Aplikasi kasir<span class=\"dot\">.</span>",
@@ -58,66 +68,65 @@
       footerText: "Aplikasi kasir untuk restoran, kafe, rumah makan, dan kuliner."
     },
     en: {
-      heroHeadline: "POS app<span class=\"dot\">.</span>",
-      heroDesignedTitle: "Built specifically",
-      heroEasyTitle: "No hassle",
-      heroEasyText: "Easy to use,<br>ready to go",
-      heroFastTitle: "No slowdowns",
-      heroFastText: "Fast on every<br>device",
-      heroSafeTitle: "99% error-free",
-      heroSafeText: "Secure transactions,<br>protected data",
-      heroStableTitle: "No lag",
-      heroStableText: "Stable and smooth,<br>without interruptions",
-      heroBusinessText: "Built for<br><strong>restaurants, cafes, eateries, and culinary businesses.</strong>",
-      downloadPlay: "Free, try it now",
-      heroSupportTitle: "Live Chat Support",
-      heroSupportText: "Get live support<br>directly in the app",
+  heroHeadline: "POS app<span class=\"dot\">.</span>",
+  heroDesignedTitle: "Made for",
+  heroEasyTitle: "Simple to use",
+  heroEasyText: "Easy to learn,<br>ready to run",
+  heroFastTitle: "Runs fast",
+  heroFastText: "Smooth on every<br>device",
+  heroSafeTitle: "99% error-free",
+  heroSafeText: "Secure transactions,<br>protected data",
+  heroStableTitle: "Lag-free",
+  heroStableText: "Stable and smooth,<br>even during rush hours",
+  heroBusinessText: "Made for<br><strong>restaurants, cafés, eateries, and food businesses.</strong>",
+  downloadPlay: "Try it for free",
+  heroSupportTitle: "Live Chat Support",
+  heroSupportText: "Get support directly<br>from inside the app",
 
-      spotlightTitle: "One App for Every Business Need, All-in-One Without Extra Plugins",
-      spotlightDescription: "Every system is integrated. Servers take orders, orders go straight to the kitchen, and cashiers process payments in one smooth operational flow.",
-      spotlightLensTitle: "Internet down? Transactions keep running",
-      spotlightLensText: "Keep selling even when the internet has issues. Transactions are saved offline and automatically synced once you are back online.",
-      spotlightSecurityTitle: "Secure transactions, protected data",
-      spotlightSecurityText: "GoePOS keeps transactions properly recorded, prevents careless deletion, and continuously monitors app performance so issues can be fixed quickly.",
+  spotlightTitle: "One App for Your Entire Business, All-in-One Without Extra Plugins",
+  spotlightDescription: "Everything works together in one smooth flow. Servers take orders, orders go straight to the kitchen, and cashiers process payments with less hassle.",
+  spotlightLensTitle: "Internet down? Keep selling",
+  spotlightLensText: "Keep taking orders even when the internet is unstable. Transactions are saved offline and synced automatically once you are back online.",
+  spotlightSecurityTitle: "Secure transactions, protected data",
+  spotlightSecurityText: "GoePOS keeps every transaction properly recorded, helps prevent careless deletion, and continuously monitors app performance so issues can be fixed faster.",
 
-      flexibleTransactionTitle: "Because Customer Transactions Are Not Always Simple.",
-      flexibleTransactionText: "Customer short on cash? Split payments are available. Eating together but paying separately? Split menu makes it easy. Not ready to pay yet? Hold the transaction. GoePOS helps cashiers handle real situations on the floor without slowing down the queue.",
+  flexibleTransactionTitle: "Because Customer Payments Are Not Always Simple.",
+  flexibleTransactionText: "Customer short on cash? Split the payment. Eating together but paying separately? Split the menu. Not ready to pay yet? Hold the transaction. GoePOS helps cashiers handle real situations without slowing down the queue.",
 
-      teamRoutingTitle: "One Input, Every Team Moves Instantly",
-      teamRoutingText: "Orders from the cashier can be sent automatically to the Beverage Counter, Kitchen, 1st Floor, 2nd Floor, and other areas.<br><br>More accurate.<br>Faster.<br>More time-saving.<br>Less miscommunication.<br><br>With GoePOS, teams do not need to shout across the room, cashiers do not need to go back and forth, and orders can reach customers more smoothly.",
+  teamRoutingTitle: "Enter an Order Once, Let Every Team Move",
+  teamRoutingText: "Orders from the cashier can be sent automatically to the beverage counter, kitchen, 1st floor, 2nd floor, and other service areas.<br><br>More accurate.<br>Faster service.<br>Less wasted time.<br>Fewer miscommunications.<br><br>With GoePOS, your team does not need to shout across the room, cashiers do not need to go back and forth, and orders can reach customers more smoothly.",
 
-      receiptPromoTitle: "Receipts Are More Than Payment Proof, They Are Promotion Media",
-      receiptPromoShareText: "Send receipts to customers via WhatsApp, Telegram, or other apps without always needing to print them.",
-      receiptPromoQrText: "Customers can simply scan the QR Code from GoePOS to view their transaction receipt digitally.",
-      receiptPromoAdText: "Add information, promos, or ads at the bottom of receipts to encourage customers to come back.",
+  receiptPromoTitle: "Receipts Are More Than Proof of Payment. They Can Promote Your Business.",
+  receiptPromoShareText: "Send receipts to customers through WhatsApp, Telegram, or other apps without always having to print them.",
+  receiptPromoQrText: "Customers can simply scan a QR code from GoePOS to view their digital transaction receipt.",
+  receiptPromoAdText: "Add information, promos, or ads at the bottom of receipts to encourage customers to come back.",
 
-      activeOrdersTitle: "Active Orders Are Always Monitored",
-      activeOrdersText: "Is the order ready? Has it been served? Or is it still being prepared? With GoePOS, every order status can be monitored on one screen, helping the team respond faster and reducing the risk of customers asking, \"Table 13 is still missing Nasi Goreng Mawut.\" Service becomes clearer, more organized, and customers do not wait without certainty.",
+  activeOrdersTitle: "Keep Every Active Order Under Control",
+  activeOrdersText: "Is the order ready? Has it been served? Or is it still being prepared? With GoePOS, every order status can be monitored from one screen, helping your team respond faster and reducing questions like, \"Table 13 is still missing their Nasi Goreng Mawut.\" Service becomes clearer, more organized, and customers do not have to wait without certainty.",
 
-      tableManagementTitle: "Organized Tables, Smoother Service.",
-      tableManagementPoint1: "View the table layout visually",
-      tableManagementPoint2: "Monitor table status",
-      tableManagementPoint3: "Combine multiple tables into one payment",
-      tableManagementPoint4: "Move customers to another table",
-      tableManagementPoint5: "View table activity history in one organized display",
+  tableManagementTitle: "Organized Tables, Smoother Service.",
+  tableManagementPoint1: "View your table layout visually",
+  tableManagementPoint2: "Monitor each table status",
+  tableManagementPoint3: "Combine multiple tables into one payment",
+  tableManagementPoint4: "Move customers to another table",
+  tableManagementPoint5: "View table activity history in one clean display",
 
-      cashierShiftTitle: "Monitor Performance for Every Cashier Shift",
-      cashierShiftText: "Have 2 or more shifts in a day? With the Cash Drawer feature in GoePOS, each cashier can open and close the cashier session according to their own shift.<br><br>Owners can view sales results per shift, identify which operating hours are busier, and understand which shifts contribute more to sales.<br><br>This data helps businesses manage stock, ingredients, and operational preparation more accurately, especially during peak hours.",
+  cashierShiftTitle: "Track Performance Across Every Cashier Shift",
+  cashierShiftText: "Run 2 or more shifts in a day? With the Cash Drawer feature in GoePOS, each cashier can open and close their own cashier session based on their shift.<br><br>Owners can view sales by shift, see which operating hours are busiest, and understand which shifts contribute the most revenue.<br><br>This data helps your business plan stock, ingredients, and daily operations more accurately, especially during peak hours.",
 
-      customerDisplayTitle: "More transparent transactions, more customer trust",
-      customerDisplayText: "Customer display helps customers see their orders and total payment directly, reducing the risk of incorrect input, miscalculation, or wrong orders from the start.",
+  customerDisplayTitle: "More transparent transactions, more customer trust",
+  customerDisplayText: "Customer Display lets customers see their orders and total payment in real time, helping reduce input mistakes, miscalculations, and wrong orders from the start.",
 
-      pricingTitle: "No ads, no surprise extra feature fees.",
-      pricingText: "GoePOS uses in-app purchases. Usage levels can be selected from within the app, while the core features remain available for outlet needs.",
-      priceTitle: "Download for free",
-      pricingCardText: "Try the app first. When transactions, products, or staff numbers grow, the usage level can be adjusted from the app menu.",
-      pricingPoint1: "No ads and no extra feature fees",
-      pricingPoint2: "Levels adjust based on transactions, products, and staff",
-      pricingPoint3: "Payments via Google Play, E-wallet, QRIS, or bank transfer",
-      pricingCta: "Download now",
-      footerText: "A POS app for restaurants, cafes, eateries, and culinary businesses."
-
-    }
+  pricingTitle: "No ads. No surprise add-on feature fees.",
+  pricingText: "GoePOS uses in-app purchases. You can choose the usage level that fits your outlet directly from the app, while the core features remain available for daily operations.",
+  priceTitle: "Download for free",
+  pricingCardText: "Try the app first. As your transactions, products, or staff grow, you can adjust your usage level anytime from the app menu.",
+  pricingPoint1: "No ads and no extra feature fees",
+  pricingPoint2: "Plans adjust to your transactions, products, and staff",
+  pricingPoint3: "Pay via Google Play, e-wallet, QRIS, or bank transfer",
+  pricingCta: "Download now",
+  footerText: "A POS app for restaurants, cafés, eateries, and food businesses."
+}
   };
 
   function setHeaderState() {
@@ -150,6 +159,17 @@
       }
     });
 
+    document.querySelectorAll("a[href*=\"id=com.pos.goe\"]").forEach(function (link) {
+      var playUrl = link.href.indexOf("com.pos.goe.free") !== -1
+        ? goeposPlayUrls.lite[lang] || goeposPlayUrls.lite.en
+        : goeposPlayUrls.pro[lang] || goeposPlayUrls.pro.en;
+
+      link.setAttribute("href", playUrl);
+
+      if (link.hasAttribute("onclick")) {
+        link.setAttribute("onclick", "gtag_report_conversion('" + playUrl + "')");
+      }
+    });
 
     languageButtons.forEach(function (button) {
       button.classList.toggle("is-active", button.getAttribute("data-lang-option") === lang);
