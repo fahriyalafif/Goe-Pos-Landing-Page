@@ -1,11 +1,31 @@
 <!doctype html>
-<html lang="id" data-lang="id">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GoePOS - Aplikasi Kasir Cloud untuk Bisnis Kuliner</title>
-  <meta name="description" content="GoePOS adalah aplikasi kasir cloud untuk restoran, kafe, dan food truck. Bisa online dan offline, lengkap dengan pesanan lewat HP, KDS, stok, laporan, dan akses banyak pengguna.">
+  <title>GoePOS - Cloud POS App for Food and Beverage Businesses</title>
+  <meta name="description" content="GoePOS is a cloud POS app for restaurants, cafes, eateries, food trucks, and culinary businesses. Works online and offline with ordering, kitchen, stock, reports, and multi-user access.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#B81B1B">
+  <link rel="canonical" href="https://goepos.id/">
+  <link rel="alternate" hreflang="en" href="https://goepos.id/">
+  <link rel="alternate" hreflang="id" href="https://goepos.id/id.html">
+  <link rel="alternate" hreflang="x-default" href="https://goepos.id/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="id_ID">
+  <meta property="og:site_name" content="GoePOS">
+  <meta property="og:title" content="GoePOS - Cloud POS App for Food and Beverage Businesses">
+  <meta property="og:description" content="A cloud POS app for restaurants, cafes, eateries, food trucks, and culinary businesses. Works online and offline with ordering, kitchen, stock, reports, and multi-user access.">
+  <meta property="og:url" content="https://goepos.id/">
+  <meta property="og:image" content="https://goepos.id/img/goepos-hero-cafe-devices.png">
+  <meta property="og:image:alt" content="GoePOS running across multiple devices for restaurant and cafe operations">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GoePOS - Cloud POS App for Food and Beverage Businesses">
+  <meta name="twitter:description" content="A cloud POS app for restaurants, cafes, eateries, food trucks, and culinary businesses. Works online and offline.">
+  <meta name="twitter:image" content="https://goepos.id/img/goepos-hero-cafe-devices.png">
+  <meta name="twitter:image:alt" content="GoePOS running across multiple devices for restaurant and cafe operations">
   <link rel="shortcut icon" type="image/x-icon" href="img/ic_goe.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,6 +52,69 @@
       return false;
     }
   </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://goepos.id/#organization",
+          "name": "Goe POS Company",
+          "url": "https://goepos.id/",
+          "logo": "https://goepos.id/img/logo/logo_go.png",
+          "email": "hallo@goepos.id",
+          "sameAs": [
+            "https://www.instagram.com/goe_pos",
+            "https://www.youtube.com/@goeposrestaurantandcafe"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://goepos.id/#website",
+          "url": "https://goepos.id/",
+          "name": "GoePOS",
+          "inLanguage": ["en", "id"],
+          "publisher": {
+            "@id": "https://goepos.id/#organization"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://goepos.id/#software",
+          "name": "GoePOS",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Android",
+          "url": "https://goepos.id/",
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.pos.goe",
+          "image": "https://goepos.id/img/goepos-hero-cafe-devices.png",
+          "description": "GoePOS is a cloud POS app for restaurants, cafes, eateries, food trucks, and food and beverage businesses that works online and offline.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@id": "https://goepos.id/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://goepos.id/#webpage",
+          "url": "https://goepos.id/",
+          "name": "GoePOS - Cloud POS App for Food and Beverage Businesses",
+          "description": "GoePOS is a cloud POS app for restaurants, cafes, eateries, food trucks, and food and beverage businesses.",
+          "isPartOf": {
+            "@id": "https://goepos.id/#website"
+          },
+          "about": {
+            "@id": "https://goepos.id/#software"
+          },
+          "inLanguage": "en"
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <div class="language-switch" aria-label="Pilihan bahasa">
@@ -40,7 +123,7 @@
   </div>
 
   <main id="home">
-    <section class="goepos-hero">
+    <section class="goepos-hero" aria-labelledby="hero-title">
       <div class="goepos-hero-container">
         <div class="goepos-hero-left reveal">
           <div class="goepos-hero-brand">
@@ -48,7 +131,7 @@
             <span class="pos">POS</span>
           </div>
 
-          <h1 class="goepos-hero-headline" data-i18n-html="heroHeadline">
+          <h1 id="hero-title" class="goepos-hero-headline" data-i18n-html="heroHeadline">
             Aplikasi kasir<span class="dot">.</span>
           </h1>
 
@@ -159,17 +242,17 @@
               id="heroDevicesImg"
               class="goepos-hero-devices-img"
               src="img/goepos-hero-cafe-devices.png"
-              alt="Perangkat Goe POS"
+              alt="GoePOS cloud POS app displayed across tablet, phone, and cashier devices for restaurant operations"
             >
           </div>
         </div>
       </div>
     </section>
 
-    <section class="post-hero-description">
+    <section class="post-hero-description" aria-labelledby="spotlight-title">
       <div class="container">
         <div class="spotlight-heading reveal">
-          <h2 data-i18n="spotlightTitle">Satu aplikasi untuk kasir, order, dapur, laporan, dan operasional kuliner</h2>
+          <h2 id="spotlight-title" data-i18n="spotlightTitle">Satu aplikasi untuk kasir, order, dapur, laporan, dan operasional kuliner</h2>
         </div>
         <div class="chrome-style-showcase reveal">
           <figure class="spotlight-hero-image">
@@ -207,10 +290,10 @@
       </div>
     </section>
 
-    <section class="section-pad flexible-transaction-section">
+    <section class="section-pad flexible-transaction-section" aria-labelledby="flexible-transaction-title">
       <div class="container">
         <div class="flexible-transaction-heading reveal">
-          <h2 data-i18n="flexibleTransactionTitle">Karena Transaksi Pelanggan Tidak Selalu Sederhana.</h2>
+          <h2 id="flexible-transaction-title" data-i18n="flexibleTransactionTitle">Karena Transaksi Pelanggan Tidak Selalu Sederhana.</h2>
           <p data-i18n="flexibleTransactionText">Pelanggan uangnya kurang? Bisa split pembayaran. Makan bareng tapi bayar sendiri-sendiri? Bisa split menu. Belum siap bayar? Bisa hold transaksi. GoePOS bantu kasir menghadapi situasi nyata di lapangan tanpa bikin antrean macet.</p>
         </div>
 
@@ -225,10 +308,10 @@
       </div>
     </section>
 
-    <section class="section-pad team-routing-section">
+    <section class="section-pad team-routing-section" aria-labelledby="team-routing-title">
       <div class="container">
         <div class="team-routing-heading reveal">
-          <h2 data-i18n="teamRoutingTitle">Sekali Input, Semua Tim Langsung Bergerak</h2>
+          <h2 id="team-routing-title" data-i18n="teamRoutingTitle">Sekali Input, Semua Tim Langsung Bergerak</h2>
         </div>
 
         <figure class="team-routing-visual reveal">
@@ -246,10 +329,10 @@
       </div>
     </section>
 
-    <section class="section-pad receipt-promo-section">
+    <section class="section-pad receipt-promo-section" aria-labelledby="receipt-promo-title">
       <div class="container">
         <div class="receipt-promo-heading reveal">
-          <h2 data-i18n="receiptPromoTitle">Struk Bukan Sekadar Bukti Bayar, Tapi Media Promosi</h2>
+          <h2 id="receipt-promo-title" data-i18n="receiptPromoTitle">Struk Bukan Sekadar Bukti Bayar, Tapi Media Promosi</h2>
         </div>
 
         <div class="receipt-promo-grid">
@@ -269,10 +352,10 @@
       </div>
     </section>
 
-    <section class="section-pad active-orders-section">
+    <section class="section-pad active-orders-section" aria-labelledby="active-orders-title">
       <div class="container">
         <div class="active-orders-heading reveal">
-          <h2 data-i18n="activeOrdersTitle">Pesanan Aktif Selalu Terpantau</h2>
+          <h2 id="active-orders-title" data-i18n="activeOrdersTitle">Pesanan Aktif Selalu Terpantau</h2>
         </div>
 
         <div class="active-orders-grid">
@@ -285,14 +368,14 @@
       </div>
     </section>
 
-    <section class="section-pad table-management-section">
+    <section class="section-pad table-management-section" aria-labelledby="table-management-title">
       <div class="container">
         <article class="table-management-card reveal">
           <figure class="table-management-media">
             <img src="img/goepos-table-management-showcase.png" alt="Tampilan manajemen meja GoePOS">
           </figure>
           <div class="table-management-copy">
-            <h2 data-i18n="tableManagementTitle">Meja Rapi, Layanan Lancar.</h2>
+            <h2 id="table-management-title" data-i18n="tableManagementTitle">Meja Rapi, Layanan Lancar.</h2>
             <ul class="table-management-list">
               <li data-i18n="tableManagementPoint1">Lihat denah meja secara visual</li>
               <li data-i18n="tableManagementPoint2">Pantau status meja</li>
@@ -305,11 +388,11 @@
       </div>
     </section>
 
-    <section class="section-pad cashier-shift-section">
+    <section class="section-pad cashier-shift-section" aria-labelledby="cashier-shift-title">
       <div class="container">
         <article class="cashier-shift-card reveal">
           <div class="cashier-shift-copy">
-            <h2 data-i18n="cashierShiftTitle">Pantau Performa Setiap Shift Kasir</h2>
+            <h2 id="cashier-shift-title" data-i18n="cashierShiftTitle">Pantau Performa Setiap Shift Kasir</h2>
             <p data-i18n-html="cashierShiftText">Punya 2 shift atau lebih dalam sehari? Dengan fitur Cash Drawer di GoePOS, setiap kasir bisa melakukan buka dan tutup kasir sesuai shift masing-masing.<br><br>Owner dapat melihat hasil penjualan per shift, mengetahui jam operasional mana yang lebih ramai, dan memahami shift mana yang memberi kontribusi penjualan lebih tinggi.<br><br>Data ini membantu bisnis mengatur stok, bahan baku, dan persiapan operasional dengan lebih tepat, terutama saat jam ramai.</p>
           </div>
           <figure class="cashier-shift-media">
@@ -319,24 +402,24 @@
       </div>
     </section>
 
-    <section class="section-pad customer-display-section">
+    <section class="section-pad customer-display-section" aria-labelledby="customer-display-title">
       <div class="container">
         <article class="cashier-shift-card customer-display-card reveal">
           <figure class="cashier-shift-media">
             <img src="img/goepos-customer-display.png" alt="Customer display GoePOS menampilkan pesanan dan total pembayaran kepada pelanggan">
           </figure>
           <div class="cashier-shift-copy">
-            <h2 data-i18n="customerDisplayTitle">Transaksi lebih transparan, pelanggan lebih percaya</h2>
+            <h2 id="customer-display-title" data-i18n="customerDisplayTitle">Transaksi lebih transparan, pelanggan lebih percaya</h2>
             <p data-i18n="customerDisplayText">Customer display membantu pelanggan melihat pesanan dan total pembayaran secara langsung, sehingga risiko salah input, salah hitung, atau salah pesanan bisa dikurangi sejak awal</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="harga" class="section-pad pricing-section">
+    <section id="harga" class="section-pad pricing-section" aria-labelledby="pricing-title">
       <div class="container">
         <div class="section-heading reveal">
-          <h2 data-i18n="pricingTitle">Tidak ada iklan, tidak ada biaya fitur tambahan yang bikin kaget.</h2>
+          <h2 id="pricing-title" data-i18n="pricingTitle">Tidak ada iklan, tidak ada biaya fitur tambahan yang bikin kaget.</h2>
           <p data-i18n="pricingText">GoePOS memakai pembelian dalam aplikasi. Level penggunaan bisa dipilih dari aplikasi, sementara fitur utamanya tetap dibuat terbuka untuk kebutuhan outlet.</p>
         </div>
         <div class="pricing-card reveal">
