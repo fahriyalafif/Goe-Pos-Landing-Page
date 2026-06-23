@@ -3137,8 +3137,9 @@ body.nav-open .site-header {
 
 /* Hero refinements requested after visual review. */
 .goepos-hero-container {
-  width: 100%;
-  padding: 20px 0 0 78px;
+  width: min(1480px, calc(100% - 96px));
+  margin: 0 auto;
+  padding: 20px 0 0;
   grid-template-columns: minmax(430px, 0.78fr) minmax(0, 1.22fr);
   gap: 10px;
 }
@@ -3334,6 +3335,7 @@ body.nav-open .site-header {
 
 @media (max-width: 1280px) {
   .goepos-hero-container {
+    width: 100%;
     padding-left: 56px;
   }
 
