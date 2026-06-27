@@ -3,28 +3,14 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://goepos.id/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://goepos.id/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://goepos.id/id.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://goepos.id/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goepos.id/en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://goepos.id/"/>
   </url>
   <url>
-    <loc>https://goepos.id/id.html</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="id" href="https://goepos.id/id.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://goepos.id/"/>
+    <loc>https://goepos.id/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://goepos.id/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://goepos.id/en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://goepos.id/"/>
-  </url>
-  <url>
-    <loc>https://goepos.id/privacypolicy.html</loc>
-    <lastmod>2023-08-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://goepos.id/privacypolicy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://goepos.id/privacypolicy.html"/>
   </url>
 </urlset>
